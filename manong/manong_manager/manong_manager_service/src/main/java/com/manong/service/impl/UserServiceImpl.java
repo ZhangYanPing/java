@@ -31,4 +31,12 @@ public class UserServiceImpl implements UserService{
 
         return null;
     }
+
+
+    @Override
+    public com.manong.pojo.User getUserByPrimaryKey(Integer pk) {
+
+        return userMapper.selectByPrimaryKey(pk);
+
+    }
 }

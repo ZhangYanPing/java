@@ -4,4 +4,5 @@ import com.manong.pojo.User;
 
 public interface UserService {
     User getUserById(Integer id);
+    User getUserByPrimaryKey(Integer pk);
 }
