@@ -28,6 +28,8 @@
         <mybatis-spring-version>2.0.1</mybatis-spring-version>
         <spring.version>4.3.13.RELEASE</spring.version>
         <druid.version>1.0.9</druid.version>
+        <mysql.version>5.1.44</mysql.version>
+        <jackson-databind>2.8.10</jackson-databind>
     </properties>
 
     <dependencyManagement>
@@ -76,6 +78,17 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
                 <version>${druid.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson-databind}</version>
             </dependency>
 
         </dependencies>
